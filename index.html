@@ -1,78 +1,86 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/themes/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="/assets/themes/bootstrap/css/bootstrap.min.css" />
+    <script src="/assets/themes/bootstrap/js/bootstrap.min.js"></script>
+    <title>Fullscreen video carrousel</title>
 
-body {
-  margin: 0;
-  font-family: Arial;
-  font-size: 17px;
-}
+    <style>
+      * {
+        box-sizing: border-box;
+      }
 
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%; 
-  min-height: 100%;
-}
+      body {
+        margin: 0;
+        font-family: Arial;
+        font-size: 17px;
+      }
 
-.content {
-  position: fixed;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  width: 100%;
-  padding: 20px;
-}
+      #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+      }
 
-#myBtn {
-  width: 200px;
-  font-size: 18px;
-  padding: 10px;
-  border: none;
-  background: #000;
-  color: #fff;
-  cursor: pointer;
-}
+      .content {
+        position: fixed;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        color: #f1f1f1;
+        width: 100%;
+        padding: 20px;
+      }
 
-#myBtn:hover {
-  background: #ddd;
-  color: black;
-}
-</style>
-</head>
-<body>
+      #myBtn {
+        width: 200px;
+        font-size: 18px;
+        padding: 10px;
+        border: none;
+        background: #000;
+        color: #fff;
+        cursor: pointer;
+      }
 
-<video autoplay muted loop id="myVideo">
-  <source src="/assets/videos/cloud.mp4" type="video/mp4">
-  Your browser does not support HTML5 video.
-</video>
+      #myBtn:hover {
+        background: #ddd;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Import Bootstrap 5 & FontAwesome 5 <span class="fab fa-font-awesome-flag"></span></h1>
+    <!-- <video autoplay muted loop id="myVideo">
+      <source src="/assets/videos/cloud.mp4" type="video/mp4" />
+      Your browser does not support HTML5 video.
+    </video>
 
-<div class="content">
-  <h1>Heading</h1>
-  <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae, ad mutat oblique delicatissimi pro.</p>
-  <button id="myBtn" onclick="myFunction()">Pause</button>
-</div>
+    <div class="content">
+      <h1>Heading</h1>
+      <p>
+        Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis
+        persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae, ad mutat oblique delicatissimi pro.
+      </p>
+      <button id="myBtn" onclick="myFunction()">Pause</button>
+    </div>
 
-<script>
-var video = document.getElementById("myVideo");
-var btn = document.getElementById("myBtn");
+    <script>
+      var video = document.getElementById("myVideo");
+      var btn = document.getElementById("myBtn");
 
-function myFunction() {
-  if (video.paused) {
-    video.play();
-    btn.innerHTML = "Pause";
-  } else {
-    video.pause();
-    btn.innerHTML = "Play";
-  }
-}
-</script>
-
-</body>
+      function myFunction() {
+        if (video.paused) {
+          video.play();
+          btn.innerHTML = "Pause";
+        } else {
+          video.pause();
+          btn.innerHTML = "Play";
+        }
+      }
+    </script> -->
+  </body>
 </html>
