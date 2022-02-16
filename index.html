@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/assets/themes/fontawesome/css/all.min.css" />
     <link rel="stylesheet" href="/assets/themes/bootstrap/css/bootstrap.min.css" />
     <script src="/assets/themes/bootstrap/js/bootstrap.min.js"></script>
-    <title>Website with <video src=""></video></title>
+    <title>Website with videos in background</title>
   </head>
   <body>
     <!-- Start navbar -->
@@ -37,18 +37,83 @@
     </nav>
     <!-- End navbar -->
 
-    <!-- Start Background video -->
-    <div class="video-background-holder">
-      <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-        <source src="/assets/videos/cloud.mp4" type="video/mp4" />
-      </video>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <!-- Start Background video -->
+          <div class="video-background-holder">
+            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+              <source src="/assets/videos/cloud.mp4" type="video/mp4" />
+            </video>
 
-      <div class="video-background-content container h-100">
-        <div class="d-flex justify-content-center text-white">
-          <h1 class="display-4">Bootstrap video background</h1>
+            <div class="video-background-content container h-100">
+              <div class="d-flex justify-content-center text-white text-center">
+                <h1 class="display-4">Home</h1>
+              </div>
+            </div>
+          </div>
+          <!-- End background video -->
+        </div>
+        <div class="carousel-item">
+          <!-- Start Background video -->
+          <div class="video-background-holder">
+            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+              <source src="/assets/videos/valley.mp4" type="video/mp4" />
+            </video>
+
+            <div class="video-background-content container h-100">
+              <div class="d-flex justify-content-center text-white text-center">
+                <h1 class="display-4">About</h1>
+              </div>
+            </div>
+          </div>
+          <!-- End background video -->
+        </div>
+        <div class="carousel-item">
+          <!-- Start Background video -->
+          <div class="video-background-holder">
+            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+              <source src="/assets/videos/traffic.mp4" type="video/mp4" />
+            </video>
+
+            <div class="video-background-content container h-100">
+              <div class="d-flex justify-content-center text-white text-center">
+                <h1 class="display-4">Skils</h1>
+              </div>
+            </div>
+          </div>
+          <!-- End background video -->
+        </div>
+        <div class="carousel-item">
+          <!-- Start Background video -->
+          <div class="video-background-holder">
+            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+              <source src="/assets/videos/ocean.mp4" type="video/mp4" />
+            </video>
+
+            <div class="video-background-content container h-100">
+              <div class="d-flex justify-content-center text-white text-center">
+                <h1 class="display-4">Contact</h1>
+              </div>
+            </div>
+          </div>
+          <!-- End background video -->
         </div>
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <!-- End background video -->
   </body>
 </html>
