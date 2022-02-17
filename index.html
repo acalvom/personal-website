@@ -9,7 +9,7 @@
     <script src="/assets/themes/bootstrap/js/bootstrap.min.js"></script>
     <script src="/assets/themes/jquery/jquery-3.4.1.min.js"></script>
     <script src="script.js"></script>
-    <link rel="icon" type="image/x-icon" href="/assets/images/brand.png">
+    <link rel="icon" type="image/x-icon" href="/assets/images/brand.png" />
     <title>Website with videos in background</title>
   </head>
 
@@ -43,7 +43,6 @@
     <button id="toggleCarousel"><i class="fa fa-pause"></i></button>
     <!-- Start carousel -->
     <div id="carouselVideosBackground" class="carousel slide" data-bs-ride="carousel">
-      
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselVideosBackground" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselVideosBackground" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -54,7 +53,6 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <section id="home">
-            
             <div class="video-background-holder">
               <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
                 <source src="/assets/videos/mountain.mp4" type="video/mp4" />
@@ -62,19 +60,19 @@
 
               <div class="video-background-content container h-100">
                 <div class="d-flex justify-content-center text-white text-center h-100 align-items-center">
-                  <h1 class="display-4">Hi,</h1><br>
-                  <h1 class="display-4">I am Andrea,</h1><br>
-                  <h1 class="display-4">web developer</h1><br>
+                  <h1 class="hero">
+                    <span class="hero-name">Andrea</span>
+                    <span class="hero-surname">Calvo Moreno</span>
+                    <span class="hero-job">Web developer</span>
+                  </h1>
                 </div>
               </div>
             </div>
-
           </section>
         </div>
 
         <div class="carousel-item">
           <section id="about">
-
             <div class="video-background-holder">
               <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
                 <source src="/assets/videos/water.mp4" type="video/mp4" />
@@ -86,13 +84,11 @@
                 </div>
               </div>
             </div>
-
           </section>
         </div>
 
         <div class="carousel-item">
           <section id="skills">
-            
             <div class="video-background-holder">
               <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
                 <source src="/assets/videos/valley.mp4" type="video/mp4" />
@@ -104,13 +100,11 @@
                 </div>
               </div>
             </div>
-            
           </section>
         </div>
 
         <div class="carousel-item">
           <section id="contact">
-            
             <div class="video-background-holder">
               <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
                 <source src="/assets/videos/ocean.mp4" type="video/mp4" />
@@ -122,11 +116,10 @@
                 </div>
               </div>
             </div>
-            
           </section>
         </div>
       </div>
-      
+
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselVideosBackground" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>

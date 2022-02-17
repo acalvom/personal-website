@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
 .video-background-holder {
   position: relative;
   background-color: black;
@@ -24,4 +30,30 @@
 .video-background-content {
   position: relative;
   z-index: 1;
+}
+
+.hero {
+  text-transform: uppercase;
+}
+
+.hero span {
+  display: block;
+  padding: 0 0.3em;
+}
+
+.hero-name {
+  font-size: 2.5em;
+}
+
+.hero-surname {
+  background-color: #fbfffeba;
+  color: #222322;
+  font-weight: bold;
+  padding: 0.3em 0;
+  font-size: 1.3em;
+  border-radius: 5px;
+}
+
+.hero-job {
+  font-weight: lighter;
 }
