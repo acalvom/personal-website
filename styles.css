@@ -2,6 +2,7 @@
 
 * {
   font-family: "Montserrat", sans-serif;
+  font-size: 16px;
 }
 
 .video-background-holder {
@@ -38,22 +39,43 @@
 
 .hero span {
   display: block;
-  padding: 0 0.3em;
+  padding: 0 0.3rem;
 }
 
 .hero-name {
-  font-size: 2.5em;
+  font-size: 6rem;
 }
 
 .hero-surname {
   background-color: #fbfffeba;
   color: #222322;
   font-weight: bold;
-  padding: 0.3em 0;
-  font-size: 1.3em;
+  font-size: 3.2rem;
   border-radius: 5px;
 }
 
 .hero-job {
   font-weight: lighter;
+  font-size: 2rem;
+  margin-top: 0.5rem;
+}
+
+.hero-link {
+  width: fit-content;
+  padding: 0.7em 2em;
+  background: #92b8bddb;
+  border-radius: 1rem;
+  cursor: pointer;
+  display: flex;
+  margin: 2rem auto 0;
+  color: #303030;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.hero-link:hover {
+  font-weight: bolder;
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: underline;
 }
