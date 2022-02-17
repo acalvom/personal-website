@@ -43,20 +43,20 @@
 }
 
 .hero-name {
-  font-size: 6rem;
+  font-size: 2.5em;
 }
 
 .hero-surname {
   background-color: #fbfffeba;
   color: #222322;
   font-weight: bold;
-  font-size: 3.2rem;
+  font-size: 1.3em;
   border-radius: 5px;
 }
 
 .hero-job {
   font-weight: lighter;
-  font-size: 2rem;
+  font-size: 0.8em;
   margin-top: 0.5rem;
 }
 
@@ -64,7 +64,7 @@
   width: fit-content;
   padding: 0.7em 2em;
   background: #92b8bddb;
-  border-radius: 1rem;
+  border-radius: 1em;
   cursor: pointer;
   display: flex;
   margin: 2rem auto 0;
@@ -78,4 +78,22 @@
   color: white;
   font-size: 1.2rem;
   text-decoration: underline;
+}
+
+.about-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3em;
+  color: #212529;
+  border-top: 3px solid #212529;
+}
+
+span#name {
+  font-weight: bold;
+  color: #212529;
+}
+
+.about-text {
+  align-self: stretch;
+  text-align: justify;
 }
