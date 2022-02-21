@@ -40,7 +40,6 @@
       </div>
     </nav>
     <!-- End navbar -->
-    <button id="toggleCarousel"><i class="fa fa-pause"></i></button>
     <!-- Start carousel -->
     <div id="carouselVideosBackground" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
@@ -49,6 +48,8 @@
         <button type="button" data-bs-target="#carouselVideosBackground" data-bs-slide-to="2" aria-label="Slide 3"></button>
         <button type="button" data-bs-target="#carouselVideosBackground" data-bs-slide-to="3" aria-label="Slide 4"></button>
       </div>
+      <button type="button" class="pause-btn" id="toggleCarousel"><span class="fa fa-pause"></span></button>
+
 
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -103,6 +104,7 @@
               </video>
 
               <div class="video-background-content container h-100">
+                <!-- prettier-ignore -->
                 <div class="d-flex flex-wrap flex-row flex-sm-column justify-content-center align-items-center h-100 w-75 mx-auto text-white text-center overflow-auto">
                   <h1 class="skills-title">What I am good at ?</h1>
                   <div class="skills-content d-flex flex-wrap justify-content-between">
@@ -170,6 +172,7 @@
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
+    
       <button class="carousel-control-next" type="button" data-bs-target="#carouselVideosBackground" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
