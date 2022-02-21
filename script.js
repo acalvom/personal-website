@@ -2,7 +2,7 @@ $(document).ready(function () {
     var paused = false;
 
     $("#carouselVideosBackground").carousel({
-        interval: 5000,
+        interval: 15000,
         pause: false
     });
     // To change .active navbar class when the carousel slides.
