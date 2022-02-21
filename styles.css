@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
 .video-background-holder {
   position: relative;
   background-color: black;
@@ -24,4 +31,145 @@
 .video-background-content {
   position: relative;
   z-index: 1;
+}
+
+.hero {
+  text-transform: uppercase;
+}
+
+.hero span {
+  display: block;
+  padding: 0 0.3rem;
+}
+
+.hero-name {
+  font-size: 2.5em;
+}
+
+.hero-surname {
+  background-color: #fbfffeba;
+  color: #222322;
+  font-weight: bold;
+  font-size: 1.3em;
+  border-radius: 5px;
+}
+
+.hero-job {
+  font-weight: lighter;
+  font-size: 0.8em;
+  margin-top: 0.5rem;
+}
+
+.hero-link {
+  width: fit-content;
+  padding: 0.7em 2em;
+  background: #92b8bddb;
+  border-radius: 1em;
+  cursor: pointer;
+  display: flex;
+  margin: 2rem auto 0;
+  color: #303030;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.hero-link:hover {
+  font-weight: bolder;
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: underline;
+}
+
+.about-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3em;
+  color: #212529;
+  border-top: 3px solid #212529;
+}
+
+span#name {
+  font-weight: bold;
+  color: #212529;
+}
+
+.about-text {
+  align-self: stretch;
+  text-align: justify;
+}
+
+.skills-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3em;
+  border-top: 3px solid white;
+}
+
+.skills-content {
+  padding: 2em 0;
+}
+
+.skills-content h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 1.4em;
+  text-align: center;
+
+  /* Animation when hover on h2 */
+  background-image: linear-gradient(to right, #ee9a60, #ee9a60 50%, #fff 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Animation when hover on h2 */
+.skills-content h2:before {
+  content: "";
+  background: #54b3d6;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Animation when hover on h2 */
+.skills-content h2:hover {
+  background-position: 0;
+}
+.skills-content h2:hover::before {
+  width: 100%;
+}
+
+.skills-content a {
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .skills-content div {
+    flex: 100%;
+    max-width: 100%;
+    margin-bottom: 2em;
+  }
+}
+@media (min-width: 601px) {
+  .skills-content div {
+    flex: 30%;
+    max-width: 30%;
+  }
+}
+
+.skills-img {
+  max-width: 45px;
+  max-height: 45px;
+  filter: invert(1);
+  margin: 0.4em;
+}
+.skills-img:hover {
+  transform: scale(1.3);
 }
