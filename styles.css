@@ -97,3 +97,79 @@ span#name {
   align-self: stretch;
   text-align: justify;
 }
+
+.skills-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3em;
+  border-top: 3px solid white;
+}
+
+.skills-content {
+  padding: 2em 0;
+}
+
+.skills-content h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 1.4em;
+  text-align: center;
+
+  /* Animation when hover on h2 */
+  background-image: linear-gradient(to right, #ee9a60, #ee9a60 50%, #fff 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Animation when hover on h2 */
+.skills-content h2:before {
+  content: "";
+  background: #54b3d6;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Animation when hover on h2 */
+.skills-content h2:hover {
+  background-position: 0;
+}
+.skills-content h2:hover::before {
+  width: 100%;
+}
+
+.skills-content a {
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .skills-content div {
+    flex: 100%;
+    max-width: 100%;
+    margin-bottom: 2em;
+  }
+}
+@media (min-width: 601px) {
+  .skills-content div {
+    flex: 30%;
+    max-width: 30%;
+  }
+}
+
+.skills-img {
+  max-width: 45px;
+  max-height: 45px;
+  filter: invert(1);
+  margin: 0.4em;
+}
+.skills-img:hover {
+  transform: scale(1.3);
+}
