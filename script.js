@@ -19,4 +19,9 @@ $(document).ready(function () {
         $('#carouselVideosBackground').carousel(state);
         $(this).find('span').toggleClass('fa-play fa-pause');
     });
+
+    $('#btnContactForm').click(function () {
+        var bootstrapToast = new bootstrap.Toast($('#toastContactForm'));
+        bootstrapToast.show();
+    });
 });
