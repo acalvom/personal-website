@@ -230,3 +230,25 @@ span#name {
   font-size: 1.2rem;
   text-decoration: underline;
 }
+
+.contact-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-content a {
+  text-decoration: none;
+  color: white;
+}
+
+.contact-content a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.contact-icon {
+  max-width: 45px;
+  max-height: 45px;
+  filter: invert(1);
+  margin: 0.4em 0.6em;
+}
