@@ -231,6 +231,12 @@ span#name {
   text-decoration: underline;
 }
 
+#toastContactForm {
+  margin: 0.5em;
+  background-color: rgba(218, 20, 20, 0.5);
+  font-weight: bold;
+}
+
 .contact-content ul {
   list-style: none;
   padding: 0;

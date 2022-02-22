@@ -159,9 +159,8 @@
               </video>
 
               <div class="video-background-content container h-100">
-                <div
-                  class="d-flex flex-wrap flex-row flex-sm-column justify-content-center text-white h-100 w-75 mx-auto align-items-center text-justify overflow-auto"
-                >
+                <!-- prettier-ignore -->
+                <div class="d-flex flex-wrap flex-row flex-sm-column justify-content-center text-white h-100 w-75 mx-auto align-items-center text-justify overflow-auto" >
                   <h1 class="page-title">Want more ?</h1>
                   <div class="contact-content d-flex flex-wrap flex-row align-items-center justify-content-around w-100 my-3">
                     <form class="w-50">
@@ -178,26 +177,24 @@
                         <label for="contactMessage" class="form-label">Type your message...</label>
                         <textarea class="form-control" id="contactMessage" rows="5"></textarea>
                       </div>
-                      <button id="btnContactForm" type="submit" class="contact-btn">SEND MESSAGE</button>
+                      <button id="btnContactForm" type="button" class="contact-btn">SEND MESSAGE</button>
+
+                      <div id="toastContactForm" class="toast align-items-center text-white border-0" role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="d-flex">
+                          <div class="toast-body">
+                            Sorry, this is not implemented
+                          </div>
+                          <button type="button" class="btn-close btn-close-white me-1 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                        </div>
+                      </div>
                     </form>
                     <div class="my-3">
                       <h2>Get in touch</h2>
                       <ul>
-                        <li>
-                          <a href="https://www.linkedin.com/in/andrea-calvo-moreno-63a71b115/" target="_blank">
-                            <img class="contact-icon" src="/assets/images/linkedin.png" alt="linkedin" />Andrea Calvo Moreno
-                          </a>
-                        </li>
-                        <li>
-                          <a href="mailto:and**@**mail.com" target="_blank"> <img class="contact-icon" src="/assets/images/email.png" alt="email" />and**@**mail.com </a>
-                        </li>
-                        <li>
-                          <a href="https://github.com/acalvom" target="_blank"> <img class="contact-icon" src="/assets/images/github.png" alt="github" />acalvom </a>
-                        </li>
-                        
-                        <li>
-                          <a href="https://codepen.io/acalvom" target="_blank"> <img class="contact-icon" src="/assets/images/codepen.png" alt="codepen" />acalvom </a>
-                        </li>
+                        <li><a href="https://www.linkedin.com/in/andrea-calvo-moreno-63a71b115/" target="_blank"><img class="contact-icon" src="/assets/images/linkedin.png" alt="linkedin" />Andrea Calvo Moreno</a></li>
+                        <li><a href="mailto:and**@**mail.com" target="_blank"> <img class="contact-icon" src="/assets/images/email.png" alt="email" />and**@**mail.com </a></li>
+                        <li><a href="https://github.com/acalvom" target="_blank"> <img class="contact-icon" src="/assets/images/github.png" alt="github" />acalvom </a></li>
+                        <li><a href="https://codepen.io/acalvom" target="_blank"> <img class="contact-icon" src="/assets/images/codepen.png" alt="codepen" />acalvom </a></li>
                       </ul>
                     </div>
                   </div>
