@@ -17,6 +17,6 @@ $(document).ready(function () {
         var state = (paused) ? 'cycle' : 'pause';
         paused = (paused) ? false : true;
         $('#carouselVideosBackground').carousel(state);
-        $(this).find('i').toggleClass('fa-play fa-pause');
+        $(this).find('span').toggleClass('fa-play fa-pause');
     });
 });

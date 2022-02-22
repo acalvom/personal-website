@@ -33,6 +33,21 @@
   z-index: 1;
 }
 
+#toggleCarousel {
+  position: absolute;
+  z-index: 2;
+  bottom: 5%;
+  left: 5%;
+  padding: 0.5em;
+  background: none;
+  cursor: pointer;
+  margin: 2rem auto 0;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.5em;
+}
+
 .hero {
   text-transform: uppercase;
 }
