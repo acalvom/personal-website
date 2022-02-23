@@ -1,10 +1,11 @@
 $(document).ready(function () {
-    var paused = false;
+    var isPaused = true;
 
     $("#carouselVideosBackground").carousel({
-        interval: 15000,
-        pause: false
+        interval: 10000,
+        pause: true
     });
+
     // To change .active navbar class when the carousel slides.
     $("#carouselVideosBackground").on("slid.bs.carousel", function () {
         $(".navbar-nav .nav-item").find("a.active").removeClass("active");
@@ -14,10 +15,10 @@ $(document).ready(function () {
 
     /* Play trigger */
     $('#toggleCarousel').click(function () {
-        var state = (paused) ? 'cycle' : 'pause';
-        paused = (paused) ? false : true;
+        var state = (isPaused) ? 'cycle' : 'pause';
+        isPaused = (isPaused) ? false : true;
         $('#carouselVideosBackground').carousel(state);
-        $(this).find('span').toggleClass('fa-play fa-pause');
+        $(this).find('span').toggleClass('fa-pause fa-play');
     });
 
     $('#btnContactForm').click(function () {
