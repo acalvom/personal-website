@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var isPaused = true;
+    var isPaused = true, state;
 
     $("#carouselVideosBackground").carousel({
         interval: 10000,
@@ -13,9 +13,17 @@ $(document).ready(function () {
         $('.navbar-nav .nav-item a[href="#' + id + '"]').addClass("active");
     });
 
+    // Automatically pauses carousel when contact tab is .active
+    $("#carouselVideosBackground").on("slid.bs.carousel", function () {
+        if ($(".carousel-item.active section").attr("id") === 'contact') {
+            $('#carouselVideosBackground').carousel('pause');
+            $('#toggleCarousel').find('span').addClass('fa-play');
+        }
+    });
+
     /* Play trigger */
     $('#toggleCarousel').click(function () {
-        var state = (isPaused) ? 'cycle' : 'pause';
+        state = (isPaused) ? 'cycle' : 'pause';
         isPaused = (isPaused) ? false : true;
         $('#carouselVideosBackground').carousel(state);
         $(this).find('span').toggleClass('fa-pause fa-play');
